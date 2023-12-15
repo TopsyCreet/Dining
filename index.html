@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="dining.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" camera-orbit="53.56deg 48.37deg 4.67m" field-of-view="30deg">
+      <button class="Hotspot" slot="hotspot-1" data-position="0.7004166984479516m 0.9449240571314088m -0.680307001552173m" data-normal="0m 0.05982494216664011m 0.9982088840992942m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Chair</div>
+      </button><button class="Hotspot" slot="hotspot-2" data-position="0.644218249479938m 0.7500000000000004m -0.23241683316518502m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Table</div>
+      </button><button class="Hotspot" slot="hotspot-3" data-position="0.623664388073303m 0.4556827888667963m -0.16128982200490266m" data-normal="0.9999879635538214m -0.004397384050198837m 0.0021761803685336387m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Table Leg</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
+  </body>
+</html>
